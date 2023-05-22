@@ -3,152 +3,158 @@
     <head>
         <meta charset="utf-8">
         <title>Loja Funko's POP!</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
         <link rel="icon" type="image/x-icon" href="/midia/logopop.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     </head>
-    <body style="background-color: #1a2449;">
+    <body id="body-interna">
     
         <!-- Banner -->
-        <div style="width: 100%; height: 40vh; overflow: hidden; background-image: url('/midia/banner-laranja.jpg'); background-size: cover;">
+        <div class="banner-interna">
 
             <style>
                 @media screen and (max-width: 1384px) {
                     .meno {
-                    display: none;
+                        display: none;
                     }
                 }
                 @media screen and (min-width: 1385px) {
                     .mena {
-                    display: none;
+                        display: none;
                     }
                 }
             </style>      
 
             <!-- Menu Laptop-G -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white meno" style="margin: 20px; border-radius:5px; background-color: #ffffffbd!important; padding: 0px;">
-            
+            <nav id="menu-computador" class="navbar navbar-expand-lg navbar-light bg-white meno">
+        
                 <!-- Imagem/Logo -->
-                <div class="col-1" style="background-color: #ffffff; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
-                    <a class="navbar-brand" style="display: block; border-top-left-radius: 5px; border-bottom-left-radius: 5px;"  href="index.html">
-                    <img src="midia/funko_classics.png" style="width: 68%; margin-left: 1.4rem;"  class="navbar-brand-img">
+                <div class="col-1">
+                    <a id="logo-menu-pc" class="navbar-brand" href="index.html">
+                        <img src="midia/funko_classics.png" class="navbar-brand-img-logo">
                     </a>
                 </div>
-
+    
                 <!-- Menu -->
-                <div class="col-7" style="display: flex; padding-left: 10%;">
-                    <button type="button" href="index.html" class="btn btn-primary hov" style="background-color: transparent; text-align: center; border-color: transparent; color: black; font-size: 18px;"><strong>Home</strong></button>
-                    <button type="button" href="sobrenos.html" class="btn btn-primary hov" style="background-color: transparent; text-align: center; border-color: transparent; color: black; font-size: 18px;"><strong>Sobre Nós</strong></button>
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-danger dropdown-toggle hov" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: transparent; text-align: center; border-color: transparent; color: black; font-size: 18px;">
-                        <strong>Loja</strong>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"><strong>Funkos</strong></a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <h6 style="font-size: 14px; text-align: center;">Categorias de Produtos</h6>
-                        <li><a class="dropdown-item" href="#"><strong>Funkos de animes</strong></a></li>
-                        <li><a class="dropdown-item" href="#"><strong>Funkos de filmes</strong></a></li>
-                        <li><a class="dropdown-item" href="#"><strong>Funkos de series</strong></a></li>
-                    </ul>
-                    </div>
-                    <button type="button" href="freteentrega.html" class="btn btn-primary hov" style="background-color: transparent; text-align: center; border-color: transparent; color: black; font-size: 18px;"><strong>Frete e Entregas</strong></button>  
-                    <button type="button" href="contato.html" class="btn btn-primary hov" style="background-color: transparent; text-align: center; border-color: transparent; color: black; font-size: 18px;"><strong>Contato</strong></button>  
-                    
-                    <style>
-                    .hov:hover,
-                    .dropdown-item:hover {
-                    background-color: rgba(0,0,0,0.05)!important;
-                    color: orangered!important;
-                    }
-                    </style>
+                <div class="col-7">
+                    <a class="btn btn-primary hov" href="index.html"><strong>Home</strong></a>
+                    <a class="btn btn-primary hov" href="sobrenos.html"><strong>Sobre Nós</strong></a>
+                    <a class="btn btn-primary hov" href="loja.html"><strong>Loja</strong></a>
+                    <a class="btn btn-primary hov" href="freteentrega.html"><strong>Frete e Entregas</strong></a>
+                    <a class="btn btn-primary hov" href="contato.html"><strong>Contato</strong></a>
                 </div>  
 
                 <!-- Botões (Logar e Inscrever-se) -->
-                <div class="col-4" style="padding-right: 35px;">
+                <div class="col-4">
                     <div class="btn-group float-end" >
-                    <a type="button" href="" class="btn btn-primary" style="background-color: rgb(240, 100, 20)!important; text-align: center; border-color: transparent; font-size: 18px;">Criar uma conta</a>
+                        <a type="button" href="" class="btn btn-primary inscreverse">Criar uma conta</a>
                     </div>
                     <div class="btn-group float-end" style="padding-right: 15px;">
-                        <a type="button" href="" class="btn btn-primary" style="background-color: transparent; text-align: center; border-color: transparent; color: black; font-size: 18px;"><strong>Logar</strong></a>
+                        <a type="button" href="" class="btn btn-primary logar"><strong>Logar</strong></a>
                     </div>
                 </div>
             </nav>
-            <strong><h1 style="color: white; position: relative; width: 100%; overflow: hidden; padding-top: 5%; text-align: center;">Tabela de Fretes e Entregas</h1></strong> 
-
+            <strong><h1 class="text-titulo">Tabela de Fretes e Entregas</h1></strong> 
+        
+            <!-- Menu Laptop -->
+            <nav class="navbar bg-light fixed-top mena">
+                <div class="container-fluid">
+                    <img src="midia/funko_classics.png" class="navbar-brand-img logo-mobile">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="midia/funko_classics.png" class="navbar-brand-img logo-menu-mobile">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><strong>Home</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobrenos.html"><strong>Sobre Nós</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="loja.html"><strong>Loja</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="freteentrega.html"><strong>Frente e Entregas</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html"><strong>Contato</strong></a>
+                            </li>
+                            </ul>
+                            <div class="btn-group float-end">
+                                <a type="button" href="" class="btn btn-primary inscreverse">Criar uma conta</a>
+                            </div>
+                            <div class="btn-group float-end botao-logar">
+                                <a type="button" href="" class="btn btn-primary logar"><strong>Logar</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>   
+        </div>
 
             <!-- Menu Laptop -->
             <nav class="navbar bg-light fixed-top mena">
                 <div class="container-fluid">
-                    <img src="midia/funko_classics.png" style="width: 5%; margin-left: 1.4rem;"  class="navbar-brand-img" alt="...">
+                    <img src="midia/funko_classics.png" class="navbar-brand-img logo-mobile">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <img src="midia/funko_classics.png" style="width: 100%; text-align: center; margin-top: 5%"  class="navbar-brand-img" alt="...">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-top: 5%">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html" style="font-size: 22px;"><strong>Home</strong></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobrenos.html" style="font-size: 22px;"><strong>Sobre Nós</strong></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 22px;">
-                            <strong> Loja </strong>
-                            </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><strong>Funkos</strong></a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <h3>Categorias de Produtos</h3>
-                            <li><a class="dropdown-item" href="#"><strong>Funkos de animes</strong></a></li>
-                            <li><a class="dropdown-item" href="#"><strong>Funkos de filmes</strong></a></li>
-                            <li><a class="dropdown-item" href="#"><strong>Funkos de series</strong></a></li>
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="midia/funko_classics.png" class="navbar-brand-img logo-menu-mobile">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><strong>Home</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobrenos.html"><strong>Sobre Nós</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="loja.html"><strong>Loja</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="freteentrega.html"><strong>Frente e Entregas</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html"><strong>Contato</strong></a>
+                            </li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="freteentrega.html" style="font-size: 22px;"><strong>Frente e Entregas</strong></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contato.html" style="font-size: 22px;"><strong>Contato</strong></a>
-                        </li>
-                        </ul>
 
-                        <style>
-                        .nav-link:hover,
-                        .dropdown-item:hover {
-                        background-color: rgba(0,0,0,0.05)!important;
-                        color: orangered!important;
-                        }
-                        </style>
-
-                        <div class="btn-group float-end" >
-                    <a type="button" href="" class="btn btn-primary" style="background-color: rgb(240, 100, 20)!important; text-align: center; border-color: transparent; font-size: 18px;">Criar uma conta</a>
-                    </div>
-                    <div class="btn-group float-end" style="padding-right: 15px;">
-                        <a type="button" href="" class="btn btn-primary" style="background-color: transparent; text-align: center; border-color: transparent; color: black; font-size: 18px;"><strong>Logar</strong></a>
+                            <div class="btn-group float-end" >
+                                <a type="button" href="" class="btn btn-primary inscreverse">Criar uma conta</a>
+                            </div>
+                            <div class="btn-group float-end botao-logar">
+                                <a type="button" href="" class="btn btn-primary logar"><strong>Logar</strong></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav> 
+            </nav>   
         </div>
 
         <!-- Corpo -->
-        <div class="container" style="background-color: #ffffff; padding-top: 25px; border-radius: 0px 0px 35px 35px; padding-bottom: 40px;">
-            <input type="text" id="filtro-input" placeholder="Digite um estado" style="margin-left: 30px;">
+        <div class="container">
+            <input type="text" id="filtro-input" placeholder="Digite um estado">
             <table id="frete-table">
               <thead>
                 <tr>
-                  <th style="text-align: center;">Origem</th>
-                  <th style="text-align: center;">Destino</th>
-                  <th style="text-align: center;">Prazo de Entrega</th>
-                  <th style="text-align: center;">Valor do Frete</th>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>Prazo de Entrega</th>
+                  <th>Valor do Frete</th>
                 </tr>
               </thead>
-                <tr id="empty-row" style="display: none;">
-                    <td colspan="4">Digite algum estado</td>
+                <tr id="empty-row">
+                    <td class="table-row" colspan="4">Digite algum estado</td>
                 </tr>
             </table>
         </div>
@@ -156,11 +162,6 @@
         <style>
             h1 {
             text-align: center;
-            }
-            table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
             }
             th, td {
             padding: 10px;
@@ -176,17 +177,16 @@
         </style>
 
         <!-- Footer -->
-        <footer style="text-align: center; background-color: #15171e;">
-            <div class="footer-container" id="footer">
-            <strong><h2 style="color: white; text-align: center; font-size: 30px; padding-top: 25px;">FIQUE CONECTADO</h2></strong>
-            
-            <a href=""><img src="midia/facebook.png" alt="Facebook" style="width: 3%; height: 3%;"></a>
-            <a href=""><img src="midia/instagram.png" alt="Facebook" style="width: 3%; height: 3%; margin-right: 20px; margin-left: 30px"></a>
-            <a href=""><img src="midia/twitter.png" alt="Facebook" style="width: 4%; height: 3%;"></a>  
+        <footer id="footer">
+            <div class="footer-container">
+              <strong><h2 class="footer-text">FIQUE CONECTADO</h2></strong>
+              <a href=""><img src="midia/facebook.png" alt="Facebook" class="redes-sociais"></a>
+              <a href=""><img src="midia/instagram.png" alt="Instagram" class="redes-sociais i"></a>
+              <a href=""><img src="midia/twitter.png" alt="Twitter" class="redes-sociais"></a>  
             </div>
-            <a href=""><img src="midia/funko_classics.png" style="width: 8%; margin-top: 35px; padding-bottom: 35px;"  class="navbar-brand-img" alt="..."></a>  
-            <h6 style="color: #777777;">©2023 Loja de Funko POP!.</h6>
-            <h6 style="color: #777777; padding-bottom: 25px;">Todos os direitos reservados. Todas as marcas registradas mencionadas são de propriedade de seus respectivos donos.</h6>
+            <a href=""><img src="midia/funko_classics.png" class="navbar-brand-img logo-footer"></a>  
+            <h6 class="nome-loja">©2023 Loja de Funko POP!.</h6>
+            <h6 class="direitos-reservados">Todos os direitos reservados. Todas as marcas registradas mencionadas são de propriedade de seus respectivos donos.</h6>
         </footer>
 
         <script>
